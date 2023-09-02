@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <link rel="stylesheet" href="booking_datepicker.css">
+
+    <style>
+        /* for image */
+        html {
+            position: relative;
+        }
+
+        body {
+            width: 100%;
+            border: 1px solid red;
+        }
+
+        .wrapper {
+            position: relative;
+        }
+
+        .wrapper {
+            background-position: center;
+            background-image: url('./wrapper.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+
+        body,
+        html,
+        wrapper {
+            border: 1px solid green;
+        }
+
+        .wrapper {
+            width: auto;
+            height: 300px;
+            border: 1px solid gold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        p {
+            border: 1px solid green;
+            text-align: center;
+            background-color: transparent;
+            font-size: 2em;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper container">
+        <p>Search</p>
+
+        <p><span>1</span> Booking</p>
+        <p><span>2</span> Room</p>
+        <p><span>3</span> Cost</p>
+    </div>
+
+
+
+    <form action="">
+
+        
+        <div class="datetimepicker">
+
+            <center>
+                <select name="branches" id="branches">
+                    <option value="All Branches">All Branches</option>
+                    <option value="Hotel Mandalay">Hotel Mandalay</option>
+                    <option value="Hotel Yangon">Hotel Yangon</option>
+                    <option value="Hotel ChaungTha">Hotel ChaungTha</option>
+                </select>
+            </center>
+
+
+        <div class="bookingContainer">
+            <label for="checkin">Check-in</label>
+                <input type="date" id="checkin">
+
+            <label for="checkout">Check-out</label>
+                <input type="date" id="checkout">
+
+            <label for="guest">Guest</label>
+                <input type="date" id="guest">
+            
+            <label for="night">NIGHTS</label>
+                <input type="date" id="night"> 
+        </div>
+
+        <hr>
+        
+    <div class="service">
+        <label for="services">Services:</label>
+
+        <input type="checkbox"><label for="television">Televison</label>
+        <input type="checkbox"><label for="noSmoking">No Smoking</label>
+        <input type="checkbox"><label for="private">Private Bathroom</label>
+        <input type="checkbox"><label for="swimmingPool">Swimming Pool</label>
+        <input type="checkbox"><label for="bikeRental">Bike Rental</label>
+        <input type="checkbox"><label for="kingBeds">King Beds</label>
+
+    </div>
+
+
+    <div class="extraservice">
+
+        <label for="extraservice">Extra Services</label>
+        <input type="checkbox"><label for="television">Televison</label>
+        <input type="checkbox"><label for="television">Televison</label>
+        <input type="checkbox"><label for="television">Televison</label>
+        <input type="checkbox"><label for="television">Televison</label>
+        <input type="checkbox"><label for="television">Televison</label>
+        <input type="checkbox"><label for="television">Televison</label>
+
+
+
+    </div>
+        
+
+    </div>
+
+
+
+
+    </form>
+
+</body>
+
+</html>

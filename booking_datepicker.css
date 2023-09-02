@@ -1,0 +1,103 @@
+:root {
+    --bgColor: rgba(17, 8, 8, 0.7);
+    --bgChildColor: rgba(0, 0, 0, 0.7);
+}
+
+.datetimepicker {
+    width: 26vw;
+    height: 50dvh;
+    border: 1px solid black;
+    box-shadow: 0 0 12px black;
+    margin: 10px;
+    background-color: var(--bgColor);
+
+}
+
+.datetimepicker * {
+    margin: 10px;
+}
+
+select {
+    display: block;
+    background-color: rgba(17, 8, 8, 0.5);
+    color: whitesmoke;
+    font-size: 12px;
+    width: 80%;
+    height: 20%;
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+
+}
+
+
+
+.bookingContainer{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 20px 20px ;
+    grid-template-areas: "checkin input1"
+    "checkout input2"
+    "guest input3"
+    "night input4";
+    border: 1px solid green;
+    row-gap: 10px;
+
+}
+
+label[for="checkin"]{
+    grid-area: checkin;
+
+}
+
+input#checkin{
+    grid-area: input1;
+}
+
+label[for="checkout"]{
+    grid-area: checkout;
+}
+
+input#checkin{
+    grid-area: input2;
+}
+
+label[for="guest"]{
+    grid-area: guest;
+}
+
+input#guest{
+    grid-area: input3;
+}
+
+label[for="night"]{
+    grid-area: night;
+}
+
+input#night{
+    grid-area: input4;
+}
+
+
+
+label, input{
+    height: 20px;
+    border: 1px solid green;
+    
+}
+
+/* all input animation */
+input{
+    border: 1px solid green; 
+}
+
+
+/* input section ended  */
+
+
+/* test section*/
+
+html > *{
+    border: none;
+
+}
